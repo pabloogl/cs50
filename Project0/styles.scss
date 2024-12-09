@@ -73,7 +73,16 @@ input {
     justify-content: center;
     align-items: center;
     height: 90%;
+    .img-foot{
+        display: flex;
+        margin-left: 25%;
+        color:#4487f6;
+        font:16px/16px Arial,sans-serif;
+        bottom:0;
+        white-space:nowrap
+    }
 }
+
 
 // Align and style for the container of the search field (text input)
 .search-field {

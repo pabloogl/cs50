@@ -43,6 +43,14 @@ input[type=submit]:hover {
   align-items: center;
   height: 90%;
 }
+.container-form .img-foot {
+  display: flex;
+  margin-left: 25%;
+  color: #4487f6;
+  font: 16px/16px Arial, sans-serif;
+  bottom: 0;
+  white-space: nowrap;
+}
 
 .search-field {
   display: flex;
