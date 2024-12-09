@@ -24,65 +24,46 @@
 
             <div class="input-advanced-form">
                 <form action="https://www.google.com/search" method="get">
-                    <div class = form-group>
-                        <label>all this words...</label>
-                        <input type="text" name="field1">
-                        <div class = "explanation">
+                    <!-- Field: All these words -->
+                    <div class="form-group">
+                        <label for="all-words">All these words:</label>
+                        <input type="text" id="all-words" name="as_q">
+                        <div class="explanation">
                             <label>Type the words like: terrier car</label>
                         </div>
                     </div>
-                    <div class = form-group>
-                        <label>this word or exact sentence</label>
-                        <input type="text" name="field2">
-                        <div class = "explanation">
-                            <label>Type words inside quotes like: "terrier car"</label>
+
+                    <div class="form-group">
+                        <label for="exact-phrase">This exact word or phrase:</label>
+                        <input type="text" id="exact-phrase" name="as_epq">
+                        <div class="explanation">
+                            <label>Put exact words in quotes: "terrier car"</label>
                         </div>
                     </div>
-                    <div class = form-group>
-                        <label>any of this words</label>
-                        <input type="text" name="field3">
-                        <div class = "explanation">
+    
+                    <!-- Field: Any of these words -->
+                    <div class="form-group">
+                        <label for="any-words">Any of these words:</label>
+                        <input type="text" id="any-words" name="as_oq">
+                        <div class="explanation">
                             <label>Type OR between words like: miniature OR standard</label>
                         </div>
                     </div>
-                    <div class = form-group>
-                        <label>none of this words</label>
-                        <input type="text" name="field4">
-                        <div class = "explanation">
-                            <label>Type the words like: terrier car</label>
+    
+                    <!-- Field: None of these words -->
+                    <div class="form-group">
+                        <label for="none-words">None of these words:</label>
+                        <input type="text" id="none-words" name="as_eq">
+                        <div class="explanation">
+                            <label>Put a minus sign just before words that you don't want: -rodent, -"Jack Russell"</label>
                         </div>
                     </div>
-                    <div class = form-group>
-                        <label>all this words...</label>
-                        <input type="text" name="field5">
-                        <div class = "explanation">
-                            <label>Type the words like: terrier car</label>
-                        </div>
-                    </div>
-                    <div class = form-group>
-                        <label>all this words...</label>
-                        <input type="text" name="field6">
-                        <div class = "explanation">
-                            <label>Type the words like: terrier car</label>
-                        </div>
-                    </div>
-                    <div class = form-group>
-                        <label>all this words...</label>
-                        <input type="text" name="field7">
-                        <div class = "explanation">
-                            <label>Type the words like: terrier car</label>
-                        </div>
-                    </div>
-                    <div class = form-group>
-                        <label>all this words...</label>
-                        <input type="text" name="field8">
-                        <div class = "explanation">
-                            <label>Type the words like: terrier car</label>
-                        </div>
+    
+                    <div class="form-group">
+                        <input type="submit" class="advanced-search" value="Advanced Search">
                     </div>
                 </form>
             </div>
-
         </div>
     </body>
 </html>

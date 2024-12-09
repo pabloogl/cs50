@@ -1,53 +1,71 @@
+// Variables para colores
+$background-dark: #1b1b1b;
+$background-light: #ffffff;
+$text-light: #ffffff;
+$text-dark: #797979;
+$highlight-color: #0161b1;
+$border-color: #afafaf;
+$button-background: #797979;
+$shadow-color: rgba(252, 252, 252, 0.8);
+$header-border-color: #000000;
+$header-text-color: #a73737;
 
+// Variables para tamaños
+$font-size-base: 16px;
+$font-size-large: 20px;
+$font-size-header: 30px;
+$input-width: 400px;
+$button-width: 185px;
+$border-radius: 4px;
 
 // Background of the page
-body{
-    background-color: #1b1b1b;
+body {
+    background-color: $background-dark;
 }
 
 // Header links style
-.header-links{
+.header-links {
     // Align to top right
     text-align: right;
-    
+
     a {
         margin: 10px;
         text-decoration: none;
-        color: aliceblue;
+        color: $text-light;
     }
 }
 
 // General style for inputs
 input {
-    font-size: 16;
-    width: 400px;
+    font-size: $font-size-base;
+    width: $input-width;
 
     &:focus {
         outline: none;
     }
+
     &[type="text"] {
-        color: #ffffff;
+        color: $text-light;
         margin: 0 0 0 5px;
     }
 
     &[type="submit"] {
-        width: 185px;
+        width: $button-width;
         font-size: 14px;
-        background-color: #797979;
-        border-radius: 4px;
+        background-color: $button-background;
+        border-radius: $border-radius;
         border-width: 0px;
         margin: 10px;
+
         // Highlight submit button
         &:hover {
-            box-shadow: 0px 0px 2px rgba(252, 252, 252, 0.8);
+            box-shadow: 0px 0px 2px $shadow-color;
         }
     }
 }
 
-
-// Allign the container that will include the form for the search
+// Align the container that will include the form for the search
 .container-form {
-    $input_field_border_radius: 25px;
     display: flex;
     margin-top: 45vh;
     text-align: center;
@@ -57,89 +75,111 @@ input {
     height: 90%;
 }
 
-// Allign and style for the container of the search field (text input)
-.search-field{
+// Align and style for the container of the search field (text input)
+.search-field {
     display: flex;
     flex-direction: row;
-    border-radius: 25px;
-    border: 1px solid #afafaf;
+    border-radius: $border-radius;
+    border: 1px solid $border-color;
     align-items: center;
     margin: 20px;
     padding-left: 15px;
 
-    input{
+    input {
         height: 45px;
-        background-color: #1b1b1b;
+        background-color: $background-dark;
         border: none;
-        border-radius: 25px;
+        border-radius: $border-radius;
     }
 }
 
-#google-name{
+#google-name {
     font-family: 'Product Sans';
-    font-size: 20px;
-    color: #ffffff;
+    font-size: $font-size-large;
+    color: $text-light;
     margin: 1vh;
 }
 
-.advanced-form{
+// Advanced form
+.advanced-form {
     margin-top: 8vh;
     margin-left: 2vh;
     width: auto;
     height: auto;
-    color: #ffffff;
-    font-size: 20px;
-}
-.header-advanced-form{
-    width: auto;
-    height: auto;
-    border-bottom: solid 1px #000000;
-    p{
-        font-size: 30px;
-        color: #ac0000;
+    color: $text-light;
+    font-size: $font-size-large;
+
+    .advanced-search {
+        display: flex;
+        padding: 8px;
+        width: auto;
+        background-color: $highlight-color;
+        color: $text-light;
+        margin: auto;
+        align-items: center;
     }
 }
 
-.input-advanced-form{
+.header-advanced-form {
+    width: auto;
+    height: auto;
+    border-bottom: solid 1px $header-border-color;
+
+    p {
+        font-size: $font-size-header;
+        color: $header-text-color;
+    }
+}
+
+.input-advanced-form {
     display: flex;
     align-items: center;
     flex-direction: column;
     margin-top: 30px;
-    form{
+
+    form {
         width: 100%;
     }
-    .form-group{
+
+    .form-group {
         display: flex;
         align-items: center;
         margin-bottom: 16px;
         width: 100%;
-        
-        input{
+
+        input[type="text"] {
             flex: 1.5;
-            border: solid #ffffff 1px;
+            border: solid $text-light 1px;
             background-color: transparent;
-            &:focus{
-                border: solid #0161b1 1px;
+
+            &:focus {
+                border: solid $highlight-color 1px;
             }
         }
 
-        label{
+        label {
             flex: 1;
             text-align: left;
-            font-size: 16px;
-            color: #797979;
+            font-size: $font-size-base;
+            color: $text-dark;
         }
 
-        .explanation{
+        .explanation {
             flex: 1;
-            text-align: right;
+            text-align: left;
             margin-left: 10px;
-            label{
+
+            label {
                 font-size: 12px;
             }
         }
     }
-    
+
+    .advanced-search {
+        align-items: center;
+        background-color: $highlight-color;
+        color: $text-light;
+        font-size: $font-size-base;
+        max-width: 200px;
+    }
 }
-
-

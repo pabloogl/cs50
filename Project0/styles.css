@@ -8,11 +8,11 @@ body {
 .header-links a {
   margin: 10px;
   text-decoration: none;
-  color: aliceblue;
+  color: #ffffff;
 }
 
 input {
-  font-size: 16;
+  font-size: 16px;
   width: 400px;
 }
 input:focus {
@@ -47,7 +47,7 @@ input[type=submit]:hover {
 .search-field {
   display: flex;
   flex-direction: row;
-  border-radius: 25px;
+  border-radius: 4px;
   border: 1px solid #afafaf;
   align-items: center;
   margin: 20px;
@@ -57,7 +57,7 @@ input[type=submit]:hover {
   height: 45px;
   background-color: #1b1b1b;
   border: none;
-  border-radius: 25px;
+  border-radius: 4px;
 }
 
 #google-name {
@@ -75,6 +75,15 @@ input[type=submit]:hover {
   color: #ffffff;
   font-size: 20px;
 }
+.advanced-form .advanced-search {
+  display: flex;
+  padding: 8px;
+  width: auto;
+  background-color: #0161b1;
+  color: #ffffff;
+  margin: auto;
+  align-items: center;
+}
 
 .header-advanced-form {
   width: auto;
@@ -83,7 +92,7 @@ input[type=submit]:hover {
 }
 .header-advanced-form p {
   font-size: 30px;
-  color: #ac0000;
+  color: #a73737;
 }
 
 .input-advanced-form {
@@ -101,12 +110,12 @@ input[type=submit]:hover {
   margin-bottom: 16px;
   width: 100%;
 }
-.input-advanced-form .form-group input {
+.input-advanced-form .form-group input[type=text] {
   flex: 1.5;
   border: solid #ffffff 1px;
   background-color: transparent;
 }
-.input-advanced-form .form-group input:focus {
+.input-advanced-form .form-group input[type=text]:focus {
   border: solid #0161b1 1px;
 }
 .input-advanced-form .form-group label {
@@ -117,11 +126,18 @@ input[type=submit]:hover {
 }
 .input-advanced-form .form-group .explanation {
   flex: 1;
-  text-align: right;
+  text-align: left;
   margin-left: 10px;
 }
 .input-advanced-form .form-group .explanation label {
   font-size: 12px;
+}
+.input-advanced-form .advanced-search {
+  align-items: center;
+  background-color: #0161b1;
+  color: #ffffff;
+  font-size: 16px;
+  max-width: 200px;
 }
 
 /*# sourceMappingURL=styles.css.map */
