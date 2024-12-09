@@ -25,7 +25,7 @@ input[type=text] {
 input[type=submit] {
   width: 185px;
   font-size: 14px;
-  background-color: #797979;
+  background-color: #494949;
   border-radius: 4px;
   border-width: 0px;
   margin: 10px;
@@ -36,7 +36,7 @@ input[type=submit]:hover {
 
 .container-form {
   display: flex;
-  margin-top: 45vh;
+  margin-top: 40vh;
   text-align: center;
   flex-direction: column;
   justify-content: center;
@@ -50,6 +50,13 @@ input[type=submit]:hover {
   font: 16px/16px Arial, sans-serif;
   bottom: 0;
   white-space: nowrap;
+}
+
+.search-button {
+  font-size: 16px;
+  color: #ffffff;
+  background-color: #494949;
+  padding: 8px;
 }
 
 .search-field {
